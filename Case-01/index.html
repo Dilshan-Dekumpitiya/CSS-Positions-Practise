@@ -1,0 +1,214 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case 01 (Using Absolute & Relative)</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+
+    <style>
+        /* Main 4 sides CSS */
+        body>section {
+            border: 1px solid red;
+            width: 50vw;
+            height: 50vh;
+            position: absolute;
+
+        }
+
+        body>section:nth-child(1) {
+            background-color: red;
+        }
+
+        body>section:nth-child(2) {
+            background-color: green;
+            top: 0;
+            right: 0;
+
+
+        }
+
+        body>section:nth-child(3) {
+            background-color: orange;
+            bottom: 0;
+        }
+
+        body>section:nth-child(4) {
+            background-color: #F7138F;
+            bottom: 0;
+            right: 0;
+        }
+
+        /* corner four circles CSS */
+        body>div {
+            border: 2px solid white;
+            width: 120px;
+            height: 120px;
+            z-index: 1;
+            position: absolute;
+            background-color: white;
+        }
+
+        body>div:nth-child(5) {
+            top: 0;
+            left: 0;
+            border-radius: 0% 0% 100% 0%;
+        }
+
+        body>div:nth-child(6) {
+            top: 0;
+            right: 0;
+            border-radius: 0% 0% 0% 100%;
+        }
+
+        body>div:nth-child(7) {
+            bottom: 0;
+            left: 0;
+            border-radius: 0% 100% 0% 0%;
+        }
+
+        body>div:nth-child(8) {
+            bottom: 0;
+            right: 0;
+            border-radius: 100% 0% 0% 0%;
+        }
+
+        /* center box */
+        body>div:nth-child(9) {
+            margin: auto;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            width: 150px;
+            height: 150px;
+
+        }
+
+        /* center box circle*/
+        body>div>div {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            margin: auto;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            background-color: red;
+            border-radius: 100%;
+
+        }
+
+        /* top center half circle */
+        body>div:nth-child(10) {
+            margin: auto;
+            top: 0;
+            right: 0;
+            left: 0;
+            width: 200px;
+            height: 100px;
+            border-radius: 0 0 100px 100px;
+
+        }
+
+        /* bottom center half circle */
+        body>div:nth-child(11) {
+            margin: auto;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 200px;
+            height: 100px;
+            border-radius: 100px 100px 0 0;
+        }
+
+        /* section center circle */
+        section>div{
+           background-color: white; 
+           position: absolute;
+           width: 150px;
+           height: 150px;
+           margin: auto;
+           top: 0;
+           right: 0;
+           bottom: 0;
+           left: 0;
+           border-radius: 100%;
+        }
+
+        section>div>div{
+            background-color: red;
+            width: 60px;
+            height: 60px;
+            margin: auto;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            position: absolute;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Main 4 sides -->
+    <section>
+        <!-- top left side center circle -->
+        <div>
+            <!-- top left side center box -->
+            <div></div>
+        </div>
+
+    </section>
+
+    <section>
+        <!-- top right side center circle -->
+        <div>
+            <!-- top right side center box -->
+            <div></div>
+        </div>
+
+    </section>
+
+    <section>
+        <!-- bottom left side center circle -->
+        <div>
+            <!-- bottom left side center box -->
+            <div></div>
+        </div>
+
+    </section>
+
+    <section>
+        <!-- bottom right side center circle -->
+        <div>
+            <!-- bottom right side center box -->
+            <div></div>
+        </div>
+
+    </section>
+
+    <!-- corner four circles -->
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+    <!-- center box -->
+    <div>
+        <!-- center box circle -->
+        <div></div>
+    </div>
+
+    <!-- top center half circle -->
+    <div></div>
+
+    <!-- bottom center half circle -->
+    <div></div>
+
+</body>
+
+</html>

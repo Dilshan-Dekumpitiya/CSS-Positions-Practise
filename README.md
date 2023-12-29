@@ -1,4 +1,4 @@
-# CSS-Positions-Assingnment-03
+# CSS-Positions Practise
 
 ![](README_Assets/Case-01.jpg)
 
