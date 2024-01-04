@@ -1,11 +1,223 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Case 02 (Using Absolute,Relative Positions and Box Model)</title>
     <link rel="stylesheet" href="./assets/css/normalize.css">
-</head>
-<body>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/fontawesome/css/all.css">
+
+    <style>
+
+        /* header elements style start*/
+        header {
+            height: 50px;
+            position: relative;
+            box-shadow: 10px 1px 10px 1px #917a7a;
+        }
+
+        header>ul {
+            position: absolute;
+            right: 10px;
+            bottom: 0;
+            list-style: none;
+            font-size: 18px;
+            font-family: 'Oswald', sans-serif;
+        }
+
+        header>ul>li {
+            display: inline;
+            padding: 0 10px 0 10px;
+            color: #60636e;
+        }
+
+        header>ul>li:hover{
+            cursor: pointer;
+            color: blue;
+        }
+
+        header>img {
+            margin: 0 0 0 15px;
+        }
+        /* header elements style end*/
+
+        /* main elements style start*/
+        main>nav{
+            position: absolute;
+            width: 150px;
+            top: 0;
+            bottom: 0;
+            background-color: purple;
+            color: white;
+            min-height: 100vh;
+        }
+        main>nav>ul{
+            list-style: none;
+            font-size: 16px;
+            margin-top: 39px;
+        }
+        main>nav>ul>li{
+            padding-bottom: 30px;
+            font-family: 'Open Sans', sans-serif;
+        }
+        body> main{
+            position: relative;
+        }
+        body>main>section{
+            margin: 0 0 0 160px;
+            padding: 10px;
+            min-height: 100vh;
+        }
+        main>nav>ul>li>a{
+            text-decoration: none;
+            color: white;
+            padding-bottom: 4px;
+            margin: 0 0 0 10px;
+        }
+        main>nav>ul>li>a:hover{
+            color: orange;
+        }
+
+        /* main section content started */
+        main>section>section{
+            height: 300px;
+            position: relative;
+        }
+        main>section>section>div{
+            position: absolute;
+            height: 100%;
+            width: calc(100%/3);
+            
+        }
+        main>section>section>div:nth-child(1){
+           left: 0;
+           background: url("assets/img/giphy.gif");
+           background-size: cover;
+        }
+        main>section>section>div:nth-child(2){
+            border-left: 6px solid white;
+            left: calc(100%/3);
+            background: url("assets/img/giphy.gif");
+            background-size: cover;
+        }
     
+        main>section>section>div:nth-child(3){
+            border-left: 6px solid white;
+            left: calc((100%/3)*2);
+            background: url("assets/img/giphy.gif");
+            background-size: cover;
+        }
+        /* main elements style end*/
+
+        /* footer content start */
+        footer{
+            text-align: center;
+            border: 2px solid #60636e;
+            color: white;
+            background-color: #60636e;
+            font-weight: bold;
+        }
+        /* footer content end  */
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <img src="./assets/img/ijse-logo.png" alt="">
+        <ul>
+            <li>Home</li>
+            <li>Service</li>
+            <li>Contact</li>
+            <li>About US</li>
+        </ul>
+    </header>
+
+    <main>
+        <nav>
+            <ul>
+                <li><i class="fa-solid fa-house"></i><a href="#">Home</a></li>
+                <li><i class="fa-solid fa-globe"></i><a href="#">Service</a></li>
+                <li><i class="fa-regular fa-address-book"></i><a href="#">Contact</a></li>
+                <li><i class="fa-solid fa-circle-info"></i><a href="#">About US</a></li>
+            </ul>
+        </nav>
+        <section>
+            <!-- image section -->
+            <section>
+                <div>
+                    
+                </div>
+                <div>
+                    
+                </div>
+                <div>
+                    
+                </div>
+            </section>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere aliquid ipsa, totam laudantium, expedita
+                non quo eveniet saepe placeat esse adipisci earum dolore, corrupti quae dolores distinctio excepturi
+                commodi voluptates!
+            </p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere aliquid ipsa, totam laudantium, expedita
+                non quo eveniet saepe placeat esse adipisci earum dolore, corrupti quae dolores distinctio excepturi
+                commodi voluptates!
+            </p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere aliquid ipsa, totam laudantium, expedita
+                non quo eveniet saepe placeat esse adipisci earum dolore, corrupti quae dolores distinctio excepturi
+                commodi voluptates!
+            </p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere aliquid ipsa, totam laudantium, expedita
+                non quo eveniet saepe placeat esse adipisci earum dolore, corrupti quae dolores distinctio excepturi
+                commodi voluptates!
+            </p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere aliquid ipsa, totam laudantium, expedita
+                non quo eveniet saepe placeat esse adipisci earum dolore, corrupti quae dolores distinctio excepturi
+                commodi voluptates!
+            </p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere aliquid ipsa, totam laudantium, expedita
+                non quo eveniet saepe placeat esse adipisci earum dolore, corrupti quae dolores distinctio excepturi
+                commodi voluptates!
+            </p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere aliquid ipsa, totam laudantium, expedita
+                non quo eveniet saepe placeat esse adipisci earum dolore, corrupti quae dolores distinctio excepturi
+                commodi voluptates!
+            </p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere aliquid ipsa, totam laudantium, expedita
+                non quo eveniet saepe placeat esse adipisci earum dolore, corrupti quae dolores distinctio excepturi
+                commodi voluptates!
+            </p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere aliquid ipsa, totam laudantium, expedita
+                non quo eveniet saepe placeat esse adipisci earum dolore, corrupti quae dolores distinctio excepturi
+                commodi voluptates!
+            </p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere aliquid ipsa, totam laudantium, expedita
+                non quo eveniet saepe placeat esse adipisci earum dolore, corrupti quae dolores distinctio excepturi
+                commodi voluptates!
+            </p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere aliquid ipsa, totam laudantium, expedita
+                non quo eveniet saepe placeat esse adipisci earum dolore, corrupti quae dolores distinctio excepturi
+                commodi voluptates!
+            </p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere aliquid ipsa, totam laudantium, expedita
+                non quo eveniet saepe placeat esse adipisci earum dolore, corrupti quae dolores distinctio excepturi
+                commodi voluptates!
+            </p>
+            
+
+        </section>
+    </main>
+
+    <footer>
+        <p>Developed by Dilshan Dekumpitiya</p>
+    </footer>
+
 </body>
+
 </html>
